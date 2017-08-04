@@ -1,0 +1,28 @@
+# tmuxでForwardAgentを効かせるため
+agent="$HOME/.ssh/ssh-agent-$USER"
+if [ -z "$YROOT_NAME" ]; then
+    if [ -S "$SSH_AUTH_SOCK" ]; then
+        case $SSH_AUTH_SOCK in
+        /tmp/*/agent.[0-9]*)
+            ln -snf "$SSH_AUTH_SOCK" $agent && export SSH_AUTH_SOCK=$agent
+        esac
+    elif [ -S $agent ]; then
+        export SSH_AUTH_SOCK=$agent
+    else
+        echo "no ssh-agent"
+    fi
+fi
+
+# ssh-agent config
+# ssh-agent -s
+# source ~/.ssh-agent-info
+# ssh-add -l >&/dev/null
+# if [ $? == 2 ] ; then    echo -n "ssh-agent: restart...."
+#    ssh-agent >~/.ssh-agent-info
+#    source ~/.ssh-agent-info
+# fi
+# if ssh-add -l >&/dev/null ; then
+#    echo "ssh-agent: Identity is already stored."
+# else
+#    ssh-add
+# fi

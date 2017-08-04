@@ -1,0 +1,14 @@
+export HISTFILE='/home/kkanazaw/.bash_history'
+export LSCOLORS=ExGxDxDxCxDgDxabagacad
+#export LSCOLORS=Exfxcxdxbxegedabagacad
+
+unalias ls
+alias ls='ls -G'
+
+#svn env
+export SVN_SSH='ssh -q'
+
+#cvs env
+export CVSROOT=:ext:`whoami`@cvs.dev.yahoo.co.jp:/CVSROOT
+export CVS_RSH=ssh
+

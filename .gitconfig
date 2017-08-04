@@ -1,0 +1,28 @@
+[ghq]
+    root = ~/.ghq
+    root = ~/.go/src
+[user]
+	name = miptestuser
+	email = tetuyas@designrule.jp
+
+[pr-release "branch"]
+	staging = develop
+
+[core]
+	sshCommand = ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no
+	excludesfile = /Users/kkanazaw/.gitignore_global
+[credential]
+[credential]
+[credential]
+[credential]
+	interactive = never
+	authority = Basic
+	helper = osxkeychain
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/kkanazaw/.stCommitMsg
