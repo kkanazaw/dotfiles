@@ -382,3 +382,6 @@ alias gh='cd $(ghq list -p | peco)'
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
+
+# added by travis gem
+[ -f /Users/kkanazaw/.travis/travis.sh ] && source /Users/kkanazaw/.travis/travis.sh
