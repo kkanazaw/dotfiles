@@ -227,3 +227,6 @@ function cdup() {
 zle -N cdup
 bindkey '\^' cdup
 [[ $TERM = "eterm-color" ]] && TERM=xterm-color
+
+# added by travis gem
+[ -f /Users/kkanazaw/.travis/travis.sh ] && source /Users/kkanazaw/.travis/travis.sh
