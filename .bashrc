@@ -76,7 +76,7 @@ COMP_CONFIGURE_HINTS=1
 
 # History Options
 #
-# Don't put duplicate lines in the history.
+# Don't put duplictea lines in the history.
 # export HISTCONTROL=$HISTCONTROL${HISTCONTROL+,}ignoredups
 #
 # Ignore some controlling instructions
