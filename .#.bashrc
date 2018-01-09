@@ -1,1 +1,0 @@
-kkanazaw@TetsuyanoMBP.1428

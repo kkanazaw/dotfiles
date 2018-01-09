@@ -71,6 +71,7 @@ COMP_CONFIGURE_HINTS=1
 # Uncomment to turn on programmable completion enhancements.
 # Any completions you add in ~/.bash_completion are sourced last.
 [[ -f /etc/bash_completion ]] && . /etc/bash_completion
+[[ -f $(brew --prefix)/etc/bash_completion ]] && . $(brew --prefix)/etc/bash_completion
 [[ -f ~/git-prompt.sh ]] && source ~/git-prompt.sh
 [[ -f ~/git-completion.bash ]] && source ~/git-completion.bash
 
