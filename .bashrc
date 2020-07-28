@@ -380,8 +380,8 @@ export PATH=/opt/chefdk/embedded/lib/ruby/gems/2.1.0/bin:$PATH
 alias gh='cd $(ghq list -p | peco)'
 
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
+#export NVM_DIR="$HOME/.nvm"
+#[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" # This loads nvm
 
 
 # added by travis gem
