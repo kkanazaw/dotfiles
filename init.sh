@@ -14,6 +14,8 @@
 [ ! -h ~/.gitignore_global ]; ln -sf `pwd`/.gitignore_global ~/.gitignore_global
 [ ! -h ~/.zshrc ]; ln -sf `pwd`/.zshrc ~/.zshrc
 [ ! -h ~/.config/peco ]; ln -sf `pwd`/peco ~/.config/peco
+[ ! -h ~/.config/karabiner ]; ln -sf `pwd`/peco ~/.config/karabiner
+[ ! -h ~/.config/fish ]; ln -sf `pwd`/peco ~/.config/fish
 source ~/.bashrc
 
 
