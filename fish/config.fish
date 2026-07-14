@@ -1,7 +1,6 @@
 export LANG=ja_JP.UTF-8
 set -U GHQ_SELECTOR peco
-set PATH /usr/local/bin /usr/sbin $HOME/.poetry/bin $PATH
-set -gx nvm_prefix /usr/local/opt/nvm/
+set PATH /usr/local/bin /usr/sbin $HOME/.poetry/bin /usr/local/opt/libpq/bin $PATH
 
 # cd > ls
 function cd
@@ -35,3 +34,7 @@ balias g git
 
 # The next line updates PATH for Netlify's Git Credential Helper.
 test -f '/Users/kkanazaw/Library/Preferences/netlify/helper/path.fish.inc' && source '/Users/kkanazaw/Library/Preferences/netlify/helper/path.fish.inc'
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/kkanazaw/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/kkanazaw/Downloads/google-cloud-sdk/path.fish.inc'; end
+export PATH="$HOME/.local/bin:$PATH"
+source /Users/kkanazaw/.config/op/plugins.sh
