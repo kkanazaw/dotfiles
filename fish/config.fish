@@ -27,9 +27,11 @@ end
 function fish_user_key_bindings
   bind \cr 'peco_select_history (commandline -b)'
   bind \c] 'peco_select_ghq_repository'  # 追加
-  bind \x1b peco_z # Ctrl-[にバインドする
+  #bind \x1b peco_z
 end
 
 balias g git
 #balias emacs 'emacsclient -nw -a ""'
-source (conda info --root)/etc/fish/conf.d/conda.fish
+
+# The next line updates PATH for Netlify's Git Credential Helper.
+test -f '/Users/kkanazaw/Library/Preferences/netlify/helper/path.fish.inc' && source '/Users/kkanazaw/Library/Preferences/netlify/helper/path.fish.inc'

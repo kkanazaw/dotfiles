@@ -1,6 +1,5 @@
 [ghq]
     root = ~/.ghq
-    root = ~/.go/src
 [user]
 	name = kkanazaw
 	email = new.frontier2006@gmail.com
@@ -15,3 +14,12 @@
 	interactive = never
 	authority = Basic
 	helper = osxkeychain
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+
+# This next lines include Netlify's Git Credential Helper configuration in your Git configuration.
+[include]
+  path = /Users/kkanazaw/Library/Preferences/netlify/helper/git-config
