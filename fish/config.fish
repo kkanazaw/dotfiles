@@ -1,6 +1,12 @@
 export LANG=ja_JP.UTF-8
 set -U GHQ_SELECTOR peco
-set PATH /usr/local/bin /usr/sbin $HOME/.poetry/bin /usr/local/opt/libpq/bin $PATH
+set PATH /usr/local/bin /usr/sbin $HOME/.poetry/bin /opt/homebrew/opt/libpq/bin $PATH
+# arm64 版 Homebrew を Intel 版（/usr/local）より優先する
+if test -x /opt/homebrew/bin/brew
+    /opt/homebrew/bin/brew shellenv fish | source
+end
+# python3 は Homebrew の依存で入る版ではなく python.org の 3.12 を使う
+set PATH /Library/Frameworks/Python.framework/Versions/3.12/bin $PATH
 
 # cd > ls
 function cd
