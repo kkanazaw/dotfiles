@@ -62,6 +62,5 @@ mas "Keynote", id: 409183694
 mas "Kindle", id: 302584613
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "PicGIF Lite", id: 844918735
 mas "Slack", id: 803453959
 mas "辞書 by 物書堂", id: 1380563956
